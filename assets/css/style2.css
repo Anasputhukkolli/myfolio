@@ -1,0 +1,133 @@
+:root{
+    --primary-color:#fff;
+    --secoundary-color:#676a81;
+    --tersiary-color:#43485c;
+    --forth-color:#000;
+}
+.dark-theme{
+    --primary-color:#000;
+    --secoundary-color:#fff;
+    --tersiary-color:#fff;
+    --forth-color:#fff;
+
+    
+
+}
+#icon_moon{
+    width: 20px;
+    cursor: pointer;
+    margin-left: 48px;
+}
+nav.bootsnav .container{
+    display: flex;
+    align-items: center;
+}
+#services{
+
+    padding:  50px 0 100px;
+    border:  1px solid #e5ebf2;
+    
+}
+#services .wrapper{
+
+}
+#services .services-details{
+    width: 90%;
+    margin: 0 auto;
+}
+#services .services-details .top{
+    margin: 200px 100px ;
+}
+#services .services-details .top h1{
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e5ebf2;
+
+}
+
+#services .services-details .bottom{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+#services .services-details .card{
+    width: 30%;
+    border-radius: 12px;
+    border: 1px solid var(--forth-color);
+    background-color: #fff;
+    transition: .5s ease-in-out;
+    z-index: 1;
+    box-shadow: 0 0 5px var(--forth-color),0 0 25px var(--forth-color) ;
+    padding: 48px;
+
+}
+#services .services-details .card:hover{
+    transform: scale(1.2);
+
+
+}
+#services .services-details .card:first-child:hover{
+    background: url(../images/services/web.png);
+}
+#services .services-details .card:nth-child(2):hover{
+    background: url(../images/services//app.png);
+}
+#services .services-details .card:nth-child(3):hover{
+    background: url(../images/services//ui.png);
+}
+
+
+#services .services-details .bottom .card .upper{
+    margin-top: 40px;
+    
+    
+}
+#services .services-details .bottom .card .upper .img{
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+
+}
+#services .services-details .bottom .card .upper .img img{
+    display: block;
+    width: 100%;
+
+}
+#services .services-details .bottom .card .lower{
+    margin-top: 22px;
+    margin-left: 22px;
+}
+#services .services-details .bottom .card .lower h1 a{
+    font-size: 32px;
+    margin-bottom: 28px;
+    font-weight: 700;
+    color: #000;
+    
+}
+#services .services-details .bottom .card .lower p {
+    font-size: 18px;
+    color: #000;
+}
+#services .services-details .bottom .card .lower a.link{
+    color: #616bdb;
+
+}
+#services .services-details .bottom .card .lower a.link:hover{
+    color: #a4abf3;
+}
+#services .services-details .bottom .card .lower a.link:target{
+    color: red;
+}
+@media (max-width: 550px) {
+    #services .services-details .bottom{
+        display: block;
+    }
+    #services .services-details .card {
+        width: 100%;
+    }
+
+}
