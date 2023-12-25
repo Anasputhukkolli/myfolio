@@ -191,7 +191,6 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     color: #fff;
     font-size: 54px;
     font-weight: 700;
-    text-transform: uppercase;
     line-height: 1.5;
 }
 .header-text h2 span {color: #d92cf9;}
@@ -199,11 +198,10 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     color: #fff;
     font-size: 20px;
     font-weight: 300;
-    text-transform: uppercase;
     margin: 30px 0 60px;
     letter-spacing: 1px;
 }
-.header-text a {
+.header-text a.button {
     width: 200px;
     height: 60px;
     line-height: 60px;
@@ -219,7 +217,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     -o-transition: 0.3s linear; 
     transition: 0.3s linear;
 }
-.header-text a:hover{ box-shadow: 0 5px 20px rgba(0,0,0,.4);background:#9f00ff;border: 1px solid #9f00ff;}
+.header-text a.button:hover{ box-shadow: 0 5px 20px rgba(0,0,0,.4);background:#9f00ff;border: 1px solid #9f00ff;}
 /*.header-text-area*/
 
 /*-------------------------------------
@@ -252,15 +250,19 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 /*.single-about-txt*/
 
 /*.single-about-img */
-.single-about-img{position: relative;box-shadow: 0 5px 20px rgba(14,25,80,.30);}
+.single-about-img{
+    position: relative;
+}
+
 .single-about-img:before {
     position:  absolute;
     content: " ";
-    top: 0;
-    left:  0;
+    top: 108px;
+    left:  -48px;
     width: 109%;
     height:  100%;
     background: rgba(31,44,108,.3);
+    border-radius: 50%;
 }
 .single-about-img img {
     max-width: 500px;
@@ -270,12 +272,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 109%;
-    height: 90px;
-    background: #1f2c6c;
+    margin-bottom: 100px;
 }
 /*.ab-list-icon */
 .about-list-icon ul {
@@ -286,9 +283,22 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     cursor:pointer;
     color: #fff;
 }
-.about-list-icon ul li a {
+.about-list-icon ul.social li a {
     cursor: pointer;
     color: #fff;
+    display: inline-block;
+    border: 2px solid;
+    margin-left: 20px;
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+}
+.about-list-icon ul.social li a:hover{
+    cursor: pointer;
+    cursor: pointer;
+    color: #9f00ff;
     display: inline-block;
     border: 2px solid;
     margin-left: 20px;

@@ -21,6 +21,7 @@
 nav.bootsnav .container{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 #services{
 
@@ -62,7 +63,7 @@ nav.bootsnav .container{
     transition: .5s ease-in-out;
     z-index: 1;
     box-shadow: 0 0 5px var(--forth-color),0 0 25px var(--forth-color) ;
-    padding: 10px;
+    padding: 30px;
     cursor: pointer;
 
 }
@@ -103,14 +104,14 @@ nav.bootsnav .container{
     margin-left: 22px;
 }
 #services .services-details .bottom .card .lower h1 a{
-    font-size: 22px;
+    font-size: 32px;
     margin-bottom: 28px;
     font-weight: 700;
     color: #000;
     
 }
 #services .services-details .bottom .card .lower p {
-    font-size: 12px;
+    font-size: 18px;
     color: #000;
     font-style: italic;
     font-weight: 600;
